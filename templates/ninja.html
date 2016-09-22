@@ -3,18 +3,22 @@
 <head>
   <style>
     body {
-    background: {{color}};
+    background: aliceblue;
     }
   </style>
 </head>
 <body>
-  <title>Friends</title>
-  <h1>I has some pals</h1>
+  <title>{{title}}</title>
+  <h1>I has some jobs</h1>
   <br>
-  <h3>My pals are:</h3>
-  <ul>
-    {%- for item in pals %}
-    <li>{{item}}</li>
+  <table border="1">
+    {%- for key in dict %}
+    <tr>
+      <td> {{dict[key]}} </td>
+      <td> {{key}} </td>
+    </tr>
     {%- endfor %}
-  </ul>
+  </table>
+  <br>
+  <p>Your random occupation: {{occupation}}</p>
 </body>
