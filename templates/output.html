@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    {% if success %}
+    <title>SUCCESS</title>
+    {% else %}
+    <title>FAILURE</title>
+    {% endif %}
+  </head>
+
+  <body>
+    {% if success %}
+    <h1>CONGRATULATIONS YOU HAVE MADE IT TO MY LOVELY WEBPAGE</h1>
+    <br>
+    <h3>Here have a happy doggo</h3>
+    <img src="http://www.zalaw.com/images/happy-dog.jpg" alt="NOOO WHERE IS TEH DOGGO">
+    {% else %}
+    <h1>You have failed me</h1>
+    <br>
+    <h2>Truly</h2>
+    <br>
+    <h3>I am disappointed</h3>
+    <br>
+    <h4>...</h4>
+    <br>
+    <h5>.......</h5>
+    <br>
+    <h6><a href="/">Try again??</a></h6>
+    {% endif %}
+  </body>
+  
+</html>
