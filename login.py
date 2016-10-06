@@ -4,11 +4,12 @@ import random, hashlib
 app = Flask(__name__)
 
 @app.route("/", methods=['POST', 'GET'])
-def login():        
-    if request.form != None:
-        session.pop("user")
+def login():
     if "user" in session:
-        return redirect("/results")
+        if "logout" in request.form:
+            session.pop("user")
+        else:
+            return redirect("/results")
     return render_template("loginpage.html")
 
 
@@ -48,7 +49,7 @@ def parseCSV(location):
 @app.route("/results", methods=['GET', 'POST'])
 def results():
     if "user" in session:
-        return render_template("output.html", success=True)
+        return render_template("output.html", success=True, user=session["user"])
     else:
         logins = parseCSV("demlogins.csv")
         #logins = open("demlogins.csv", "r")
@@ -57,14 +58,18 @@ def results():
         #myHash.hexdigest()#update(request.form['pass'])
         sentUser = request.form['username']
         sentPwd = request.form['pass']
-        session["user"] = sentUser
         if sentUser in logins and logins[sentUser] == myHash.hexdigest():
             #if sentUser=='breakerOfRepos' and myHash.hexdigest()==hashlib.sha1('H1MrBr0wn!!').hexdigest():
-            return render_template("output.html", success=True)
+            session["user"] = sentUser
+            return render_template("output.html", success=True, user=session["user"])
         else:
-            return render_template("output.html", success=False)
+            if sentUser not in logins:
+                return render_template("output.html", success=False, problem="wronguser")
+            else:
+                return render_template("output.html", success=False, problem="wrongpassword")
         
 if __name__=="__main__":
     app.debug = True
-    app.secret_key = "I4m4H4ppyR0b0tW00pW00pW00pW00p"
+    spoopysecret = open("../privatekey.txt", "r") 
+    app.secret_key = spoopysecret.read()
     app.run()

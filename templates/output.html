@@ -13,14 +13,22 @@
   <body>
     {% if success %}
     <h1>CONGRATULATIONS YOU HAVE MADE IT TO MY LOVELY WEBPAGE</h1>
-    <br>
+    {% if user %}
+    <h3>Logged in as: {{user}}</h3>
+    {% endif %}
     <h3>Here have a happy doggo</h3>
     <img src="http://www.zalaw.com/images/happy-dog.jpg" alt="NOOO WHERE IS TEH DOGGO">
     <form action="/" method="post">
-      <input type="submit" name="logout">
+      <input type="submit" name="logout" value="Log Out">
     </form>
     {% else %}
     <h1>You have failed me</h1>
+    <br>
+    {% if problem=="wronguser" %}
+    <h1>THAT USERNAME DOES NOT EXIST DUMMY</h1>
+    {% else %}
+    <h1>THAT PASSWORD WAS WRONG</h1>
+    {% endif %}
     <br>
     <h2>Truly</h2>
     <br>
