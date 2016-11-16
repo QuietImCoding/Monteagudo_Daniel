@@ -1,0 +1,14 @@
+body {
+    background: #ABCDEF;
+}
+
+h1 {
+    display: block;
+    font-size: 4em;
+    text-align: center;
+}
+
+ul {
+    position: absolute;
+    display: block;
+}

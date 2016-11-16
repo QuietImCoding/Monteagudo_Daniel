@@ -1,0 +1,32 @@
+body {
+    background: #ABCDEF;
+    padding: 0% 20% 0% 20%;
+}
+
+h1 {
+    display: block;
+    font-size: 4em;
+    text-align: center;
+}
+
+ul > li {
+    border: solid 3px;
+    border-color: #BCDEFF;
+    padding: .5em;
+    display: inline;
+    background: #9ABCDE;
+}
+
+ul {
+    padding: 4em;
+    display: block;
+    list-style: none;
+}
+
+p {
+    padding: 3em;
+}
+
+a {
+    text-decoration: none;
+}
