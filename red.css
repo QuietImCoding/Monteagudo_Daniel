@@ -10,15 +10,21 @@ h1 {
 }
 
 ul > li {
-    border: solid 3px;
+    border: solid 1px;
     border-color: #BCDEFF;
     padding: .5em;
     display: inline;
     background: #9ABCDE;
 }
 
+ul > li:hover {
+    background: #89ABCD;
+}
+
 ul {
-    padding: 4em;
+
+    text-align: center;
+    padding: 1em;
     display: block;
     list-style: none;
 }
@@ -29,4 +35,8 @@ p {
 
 a {
     text-decoration: none;
+}
+
+h3 {
+    text-align: center;
 }
