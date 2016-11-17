@@ -1,0 +1,32 @@
+/*blue: 438fe4;
+red: e66b46;
+pink: ffcab1;
+lighter: 69a2b0;
+green: 659157;*/
+
+
+.navzone{
+    position: absolute;
+    top: 0%;
+}
+
+.navzone > ul > li {
+    display: inline;
+    background: #FFF;
+    color: #659157;
+}
+
+h3 {
+    display: inline;
+}
+
+.content {
+
+}
+
+body {
+    background: url("https://static.pexels.com/photos/31423/pexels-photo-31423.jpg");
+background-size:100%;
+    background-al
+    margin: -1px;
+}

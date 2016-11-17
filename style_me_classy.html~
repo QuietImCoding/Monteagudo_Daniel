@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- DEMO FILE for CSS, part 2: ids, classes, divs--> 
+
+<html>
+  <head>
+    <title>foo title</title>
+  </head>
+
+  <body>
+    <div class="extreme"> 
+      <div id="head1">
+	<h1>foo heading 1</h1>
+      </div>
+    </div>
+
+    <div class="navzone">
+    <h3>nav foo</h3>
+    <ul>
+      <li id="tehlulz"><a href="http://www.xkcd.com">
+	  dis
+      </a></li>
+      <li><a href="http://www.nytimes.com">
+	  dat
+      </a></li>
+      <li><a href="http://www.fakegrimlock.com">
+	  de udda ting
+      </a></li>
+    </ul>
+</div>
+    <div class="content">
+      <h2>main foo heading</h2>
+      <div class="prose">
+	<p> I was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! You don't know how to do any of those. I'm sure those windmills will keep them cool. I love this planet! I've got wealth, fame, and access to the depths of sleaze that those things bring.
+
+	  And remember, don't do anything that affects anything, unless it turns out you were supposed to, in which case, for the love of God, don't not do it!</p> 
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="extreme"> 
+      Copyright &copy; 2016 Clyde "Thluffy" Sinclair
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,10 @@
+/*blue: 438fe4;
+red: e66b46;
+pink: ffcab1;
+lighter: 69a2b0;
+green: 659157;*/
+
+.navzone {
+    position: relative;
+    margin-top: 0;
+}
