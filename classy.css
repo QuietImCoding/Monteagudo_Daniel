@@ -5,28 +5,45 @@ lighter: 69a2b0;
 green: 659157;*/
 
 
-.navzone{
+.navzone {
     position: absolute;
+    display: inline;
     top: 0%;
+    left: 0%;
+    background: rgba(43, 143, 228, 50);
+    width: 100vw;
+    padding: .5em;
 }
 
-.navzone > ul > li {
-    display: inline;
-    background: #FFF;
-    color: #659157;
-}
-
-h3 {
+ul {
     display: inline;
 }
 
-.content {
+.navzone ul li{
+    display: inline;
+    vertical-align: middle;
+    padding: .5em;
+    background: #68a2b0;
+}
 
+li a {
+    text-decoration: none;
+    /*background: #68a2b0;*/
+}
+
+.navzone h3 {
+    display: inline;
+    margin-left: 1em;
+    position: relative;
+    top: 10%;
+}
+
+.content, .extreme{
+    margin-top: 3em;
 }
 
 body {
-    background: url("https://static.pexels.com/photos/31423/pexels-photo-31423.jpg");
-background-size:100%;
-    background-al
-    margin: -1px;
+    background: no-repeat url("https://static.pexels.com/photos/31423/pexels-photo-31423.jpg");
+    background-size: 100vw 100vh;
+    /*margin: -1px;*/
 }
